@@ -98,7 +98,7 @@ python-versions = ">=3.6, <3.7"
 
 [[package]]
 name = "fastapi"
-version = "0.61.2"
+version = "0.71.0"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 category = "dev"
 optional = false
