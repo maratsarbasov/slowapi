@@ -501,7 +501,7 @@ class Limiter:
             limits = self._route_limits[name] if name in self._route_limits else []
             dynamic_limits = []
             if name in self._dynamic_route_limits:
-                for lim in self._dynamic_route_limits[name]:
+                for lim in self._dynamic_route_limits[name].with_request(request):
                     try:
                         dynamic_limits.extend(list(lim.with_request(request)))
                     except ValueError as e:
